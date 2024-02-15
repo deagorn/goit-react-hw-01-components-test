@@ -1,7 +1,6 @@
 import s from "./Profile.module.css"
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
-    console.log(stats)
     return (
         <>
         <div className={s.profile}>
@@ -18,7 +17,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
 
                 <ul className={s.stats}>
                 {Object.entries(stats).map(([key, value]) => {
-                    return ( <li className={s.list}>
+                    return ( <li className={s.list} key={key}>
                         <span className={s.label}>{key}</span>
                         <span className={s.quantity}>{value}</span>
             </li>)
