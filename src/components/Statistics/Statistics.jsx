@@ -2,7 +2,6 @@ import s from "./Statistics.module.css"
 
 const Statistics = ({ title, stats }) => {
     return (
-        <>
             <section className={s.statistics}>
                 {title ? <h2 className={s.title}>{title}</h2> : <></>}
                 
@@ -16,6 +15,6 @@ const Statistics = ({ title, stats }) => {
                     
   </ul>
 </section>
-</>)}
+)}
 
 export default Statistics;
